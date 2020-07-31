@@ -1,0 +1,28 @@
+p {
+    margin: 10px 0 !important;
+
+}
+.login-container {
+    width: 400px;
+    margin-top: 50px;
+    text-align: center; 
+}
+body {
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.fa-small{
+    font-size: 16px !important;
+}
+.btn-float {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    
+  }
+.img-small {
+    width: 150px;
+
+}
