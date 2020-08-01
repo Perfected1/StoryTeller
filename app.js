@@ -34,8 +34,8 @@ app.use(methodOverride(function (req, res) {
     }
   }))
 //logging
-if (process.env.NODE_ENV === 'developement') {
-    app.use(morgan('dev'))
+if (process.env.NODE_ENV === 'production') {
+    app.use(morgan('start'))
 }
 
 const { formatDate, stripTags, truncate, editIcon, select } = require('./helpers/hbs')
