@@ -15,17 +15,6 @@ router.get('/google/callback', passport.authenticate('google', { failureRedirect
     }
 )
 
-// @desc Auth with facebook
-// @route GET /auth/facebook
-router.get('/facebook', passport.authenticate('facebook', { scope: ['profile'] }))
-
-// @desc Facebook auth callback
-// @route GET /auth/facebook/callback
-router.get('/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/' }),
-    (req, res) => {
-        res.redirect('/dashboard')
-    }
-)
 //@desc Logout User
 //@route /auth/logout
 router.get('/logout', (req, res) => {
